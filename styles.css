@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(18, 18, 18);
+    font-family: sans-serif;
+}
+
+body main {
+    margin: 60px auto;
+    width: fit-content;
+}
+
+body main .title {
+    text-align: center;
+    font-size: 35px;
+}
+
+
+body main form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 40px auto 0px auto;
+}
+
+body main form label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+body main form input {
+    height: 35px;
+}
+
+body main form input[type="text"] {
+    padding-left: 8px;
+    font-size: 17px;
+}
+
+body main form button {
+    padding: 10px 15px;
+    width: fit-content;
+    border: none;
+    background-color: rgb(255, 191, 0);
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+body main .cards-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin: 50px auto;
+}
+
+body main .cards-list .card {
+    padding: 25px 40px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+}
+
+body main .cards-list .card .subject-name {
+    font-size: 25px;
+}
+
+body main .cards-list .card .radio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);
+    grid-template-rows: 30px;
+    grid-column-gap: 23px;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+body main .cards-list .card .radio-wrapper .radio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+body main .cards-list .card .radio-wrapper .delete {
+    background-color: rgb(255, 23, 23);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+body main .cards-list .card .radio-wrapper .radio input {
+    display: none;
+}
+
+body main .cards-list .card .radio-wrapper .radio[active] {
+    background-color: rgb(0, 98, 255);
+    color: black;
+}
+
+body main .middle {
+    font-size: 28px;
+    text-align: center;
+}
+
+
+
+/* @media (max-width: 1230px) {
+    body main .cards-list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 830px) {
+    body main .cards-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 430px) {
+    body main {
+      width: 92%;
+      overflow: hidden;
+    }
+    body main .cards-list .card {
+      width: 100%;
+      padding: 18px 23px;
+    }
+    body main .cards-list .card .radio-wrapper {
+      margin-top: 20px;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      grid-column-gap: 0px;
+    }
+    body main .cards-list .card .radio-wrapper .radio {
+      width: 30px;
+      height: 30px;
+    }
+  } */
